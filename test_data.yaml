@@ -1,0 +1,5 @@
+train: Drums/train/images
+val: Drums/test/images
+
+nc: 4
+names: ['Bass Drum', 'Floor Tom', 'Rack tom', 'Snare Drum']

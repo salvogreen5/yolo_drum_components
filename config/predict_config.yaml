@@ -1,0 +1,9 @@
+# model
+MODEL_NAME: drums_model_1
+IMGSZ: 640
+
+# images
+DATA_FOLDER: images
+INPUT_IMAGES_FOLDER: raw
+PROCESSED_IMAGES_FOLDER: processed
+PREDICTED_IMAGES_FOLDER: predicted

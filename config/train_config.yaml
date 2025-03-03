@@ -1,0 +1,26 @@
+# paths and filenames
+MODEL_FOLDER: model
+YOLO_MODEL_TYPE: yolo11m.pt # medium size
+DATASET_FOLDER: Drums
+TRAIN_DATA_YAML_FILE: train_data.yaml
+TEST_DATA_YAML_FILE: test_data.yaml
+BASELINE_MODEL_TEST_FOLDER: baseline_test_results
+CUSTOM_METRICS_FILENAME: custom_metrics
+
+# train params
+MODEL_NAME: drums_model
+GRID_SEARCH_METRIC: ap
+GRID_SEARCH_PARAMS:
+  freeze: 
+    - 9 # backbone
+    - 23 # all except last layer
+  patience: # early stopping on validation data box loss
+    - 50
+  time: # maximum training time (hours)
+    -
+  batch:
+    - 16
+  imgsz:
+    - 640
+  epochs:
+    - 1

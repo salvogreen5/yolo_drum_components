@@ -1,0 +1,13 @@
+train: Drums/train/images
+val: Drums/valid/images
+test: Drums/test/images
+
+nc: 4
+names: ['Bass Drum', 'Floor Tom', 'Rack tom', 'Snare Drum']
+
+roboflow:
+  workspace: troy-smith-akyo8
+  project: drums-6eqzp
+  version: 5
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/troy-smith-akyo8/drums-6eqzp/dataset/5
