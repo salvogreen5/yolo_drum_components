@@ -12,6 +12,7 @@ MODEL_NAME: drums_model
 GRID_SEARCH_METRIC: ap
 GRID_SEARCH_PARAMS:
   freeze: 
+    - # no frozen layers  
     - 9 # backbone
     - 23 # all except last layer
   patience: # early stopping on validation data box loss
@@ -23,4 +24,4 @@ GRID_SEARCH_PARAMS:
   imgsz:
     - 640
   epochs:
-    - 1
+    - 200
